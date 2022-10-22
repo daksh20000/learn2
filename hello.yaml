@@ -1,0 +1,22 @@
+"apple" : "I am a red fruit"
+1 : "Aps roll no."
+---
+#lists
+- apple
+- mango
+- banana
+- Apple   
+---
+cities:
+- Delhi
+- Mumbai
+- california
+- lahore 
+---
+# also for cities; block values
+
+cities: [Delhi, Mumbai, gujarat , Punjab]
+---
+{mango : yellow, fruit, king, apple : red, green also }
+...
+{dance participants: hema , jaya ,pushpa , nirma}  # not in tut

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<School name="AFBBS" principal=" Mr. Anand Swaroop">
+    <Students>
+        <Student1>
+            <Rollno>55</Rollno>
+            <Name>"Daksh Rawat"</Name>
+            <Marks>94</Marks>
+        </Student1>
+    </Students>
+</School>

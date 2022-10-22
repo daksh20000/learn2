@@ -1,0 +1,71 @@
+#strings : 3 types to store
+name: Daksh Rawat
+fruit: "Apple"
+job: 'SDE'
+
+
+# Error in writting multiline string(this below wil neither write in multiline nor single line)
+bio: My name is Daksh
+and I am a Human.
+
+#correction for this 
+
+#Case 1 store as separate lines
+
+message: |
+My name is Daksh
+and now I can write multiline strings
+
+#Case 2 write a single line in multiple lines
+
+newstring: >
+now all of this will be stored
+as a single
+line as mentioned
+above.
+
+# same as
+newstring: now all of this will be stored as a single line as mentioned above.
+
+
+numbers: 45678
+marks: 78.67
+booleanvalue: No  # no, n, N, false, False, False
+#same for true -> just opposite 
+
+
+#specify the type
+
+integer: !!int 0
+anypositivenum: !!int 55
+anynegativenum: !!int -88
+binarynum: !!int 0b11001
+octalnum: !!int 06574
+hexa: !!int 0x55
+commavalue: !!int +540_000 # 540,000
+exponential numbers: 7.023E56
+
+
+
+#floating point number
+marks: !!float 76.76
+infinite: !!float .inf
+not a num: .nan 
+
+#boolean value
+hello: !!bool yes
+
+#string
+new: !!str My name is, you know.
+
+#null
+surname: !!null Null   # or NULL or null or ~
+
+~: this is a null key
+
+#date and time
+
+date: 2022-09-24  
+india time: 2001-12-15T02:59:43.10 +5:30
+no time zone needed: 2001-12-15T02:59:43.10
+

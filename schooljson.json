@@ -1,0 +1,19 @@
+{
+    "School": [
+        {
+        "name": "AFBBS",
+        "principal": "Mr. Anand Swaroop",
+        "Students" : [
+            {
+                "rno.": 12,
+                "name": "Daksh",
+                "Marks": 89
+        
+
+            }
+        ]
+
+    }
+
+    ]
+}

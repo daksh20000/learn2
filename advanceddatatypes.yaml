@@ -1,0 +1,153 @@
+student: !!seq
+- marks
+- number
+- roll_no
+
+#like this also
+cities: [delhi, mumbai, lahore]
+
+# possible case : some of the keys of the sequences will be empty
+#known as Sparse seq
+sparse seq: 
+- hey
+- how
+-
+- Null
+- sup
+
+#can be lke this? {not in tut}
+
+{saparse mine: lion, tiger,  , cheetah,  , cat}
+               #OR
+Sparse mine 2: [tv, fridge,  , remote,  , watch]               
+
+#nested Sequences
+-
+ - mango
+ - apple 
+ - banana
+-
+ - marks
+ - Roll no.
+ - name
+
+ # key: value pairs are called maps
+ !!map
+
+
+# nested mapping : map within a map
+name: daksh rawat
+role:
+  age: 20
+  job: student
+
+#same as
+
+name: daksh rawat
+role: {age: 20 , job: student}
+
+#pairs: keys may have duplicate value
+# !!pairs
+
+pair example: !!pairs
+- job: Student
+- job: footballer
+
+#same as
+pair example: !!pairs [job: Student,  job: footballer]
+
+#this will be an array of hashtables
+
+# !!set will allow you to have unique values
+
+names: !!set
+? Daksh
+? Manek
+? Vivek
+
+# !!set will give error in 
+softdrinks: !!set
+? coke
+? fanta
+? fanta
+? limca
+
+
+
+# dictionary !!omap
+People: !!omap
+ - Daksh: 
+    name: Daksh Rawat
+    Age: 20
+    height: 190
+ - Manek:
+   name: Manek Rana
+   Age: 21
+   height: 190
+
+
+  # reusing some properties; we use anchors
+  likings: 
+   fav fruit: mango
+   dislikes: plum
+
+   person: 
+    name: Daksh Rawat
+    fav fruit: mango
+    dislike: plum
+
+   person: 
+    name: Daksh Rawat
+    fav fruit: mango
+    dislike: plum
+
+   person: 
+    name: Daksh Rawat
+    fav fruit: mango
+    dislike: plum
+
+   person: 
+    name: Daksh Rawat
+    fav fruit: mango
+    dislike: plum
+
+
+#Anchors using
+
+
+favourite: &favs
+  fav brand: new balance
+  unfav: nivia
+
+
+person1:
+  name: Daksh
+  <<: *favs 
+
+person2:
+  name: Rahul
+  <<: *favs
+  unfav: puma
+
+#person2 will look like this:
+
+person2:
+  name: Rahul
+  fav brand: new balance
+  unfav: puma
+
+
+person3:
+  name: Sonia 
+  <<: *favs 
+
+person4:
+  name: Rim
+  <<: *favs 
+
+
+
+
+
+
+

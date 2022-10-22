@@ -1,0 +1,40 @@
+Schoolinfo: &common
+  Schoolname: AFBBS
+  Principal: Mr. Anand Swaroop
+
+Student 1: 
+  Name:  
+  <<: *common
+
+Student 2: 
+  Name:  
+  <<: *common
+
+Student 3: 
+  Name:  
+  <<: *common
+
+Student 4: 
+  Name:  
+  <<: *common
+
+Student 5: 
+  Name:  
+  <<: *common
+
+
+              #OR           
+
+School: 
+- Name: AFBBS
+  Principal: "Mr. Anand Swaroop"
+  Students: 
+  - admission number: 77777
+    name: Daksh
+    marks: 88
+
+
+
+
+
+
